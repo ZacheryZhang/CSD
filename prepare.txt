@@ -1,0 +1,7 @@
+export MOMENT_CHECKPOINTS_DIR=results/moment_checkpoints/
+export MOMENT_RESULTS_DIR=results/moment_results/
+export MOMENT_DATA_DIR=/media3/Timeseries-PILE/
+export WANDB_DIR=results/wandb/wandb
+export WANDB_CACHE_DIR=results/.cache/wandb
+export DISTILL_CHECKPOINTS_DIR=results/moment_checkpoints
+bash reproduce/pretraining/pretrain.sh
