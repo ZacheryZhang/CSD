@@ -34,7 +34,7 @@ def get_tokenizer(model):
     tokenizer = LlamaTokenizer.from_pretrained(
         llama2_model_string(model_size, chat),
         use_fast=True,
-        token="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",
+        token="",
     )
     # tokenizer = AutoTokenizer.from_pretrained("NousResearch/Llama-2-7b-chat-hf", trust_remote_code=True)
 
@@ -66,7 +66,7 @@ def get_model_and_tokenizer(model):
         llama2_model_string(model_size, chat),
         device_map="auto",
         torch_dtype=torch.float16,
-        token="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",
+        token="",
     )
     model.eval()
 
